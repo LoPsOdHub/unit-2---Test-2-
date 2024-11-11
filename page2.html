@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platon Novikov - Graphic Designer</title>
+    <!-- Подключение граффити-шрифта -->
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <style>
+        /* Стили для всего сайта */
+        body {
+            font-family: 'Permanent Marker', cursive;
+            background: linear-gradient(135deg, #4b6cb7, #182848);
+            color: #fff;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+        /* Граффити-фоновые изображения */
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('graffiti1.png'), url('graffiti2.png');
+            background-repeat: no-repeat;
+            background-position: top left, bottom right;
+            background-size: 150px, 200px;
+            opacity: 0.3;
+            z-index: 0;
+        }
+        /* Контейнер с текстом */
+        .container {
+            max-width: 800px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            z-index: 1;
+            position: relative;
+        }
+        /* Панель навигации */
+        .navbar {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 2;
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            margin-left: 15px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .navbar a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        /* Заголовок и текст */
+        h1 {
+            color: #ffffff;
+            font-size: 30px;
+        }
+        p {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Панель навигации -->
+    <div class="navbar">
+        <a href="#menu">Menu</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <!-- Контент с описанием -->
+    <div class="container">
+        <h1>About Me</h1>
+        <p>My name is Platon Novikov. I am 19 years old, and I am actively engaged in graphic design, exploring different areas of design and visual arts. I am discovering my potential and experimenting with various visual styles that I may embrace as I deepen my understanding of graphic communication design.</p>
+    </div>
+</body>
+</html>
